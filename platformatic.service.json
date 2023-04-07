@@ -1,0 +1,20 @@
+{
+  "$schema": "https://platformatic.dev/schemas/v0.19.2/service",
+  "server": {
+    "hostname": "{PLT_SERVER_HOSTNAME}",
+    "port": "{PORT}",
+    "logger": {
+      "level": "{PLT_SERVER_LOGGER_LEVEL}"
+    },
+    "https": {
+      "key": { "path": "key.pem" },
+      "cert": { "path": "certificate.pem" }
+    }
+  },
+  "plugins": {
+    "paths": [
+      "./plugins",
+      "./routes"
+    ]
+  }
+}
